@@ -7,13 +7,15 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "production": "cross-env NODE_ENV=production npm run build"
   },
   "dependencies": {
     "@strapi/plugin-i18n": "4.14.3",
     "@strapi/plugin-users-permissions": "4.14.3",
     "@strapi/strapi": "4.14.3",
     "better-sqlite3": "8.6.0",
+    "cross-env": "^7.0.3",
     "pg": "^8.11.3",
     "pg-connection-string": "^2.6.2"
   },
