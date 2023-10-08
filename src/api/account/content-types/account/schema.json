@@ -4,7 +4,8 @@
   "info": {
     "singularName": "account",
     "pluralName": "accounts",
-    "displayName": "account"
+    "displayName": "account",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,7 +22,13 @@
       "type": "email"
     },
     "password": {
-      "type": "password"
+      "type": "string"
+    },
+    "transaction": {
+      "type": "json"
+    },
+    "balance": {
+      "type": "decimal"
     }
   }
 }

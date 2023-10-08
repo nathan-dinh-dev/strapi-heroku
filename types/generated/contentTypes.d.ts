@@ -368,6 +368,7 @@ export interface ApiAccountAccount extends Schema.CollectionType {
     singularName: 'account';
     pluralName: 'accounts';
     displayName: 'account';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -376,7 +377,9 @@ export interface ApiAccountAccount extends Schema.CollectionType {
     firstName: Attribute.String;
     lastName: Attribute.String;
     email: Attribute.Email;
-    password: Attribute.Password;
+    password: Attribute.String;
+    transaction: Attribute.JSON;
+    balance: Attribute.Decimal;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
